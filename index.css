@@ -1,0 +1,145 @@
+html{
+  box-sizing: border-box;
+}
+*, *::befpre, *::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font: 14px/1.5 Arial;
+  color: #333;
+  display: grid;
+  grid: auto auto/ 1fr 900px 1fr;
+}
+header{
+  grid-area: 1/1/2/4;
+  padding: 20px 0;
+  background-color: #444;
+  text-align: center;
+}
+header > img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header > h1{
+  margin: 10px;
+  font-size: 14px;
+  color: #bbb;
+}
+header > p{
+  margin: 0;
+  color: #888;
+}
+main{
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid: auto / 300px 600px;
+}
+.column-1{
+  grid-area: 1/1/2/2;
+}
+.column-2{
+  grid-area: 1/2/2/3;
+  margin-left: 20px;
+}
+main section{
+  display: grid;
+  grid: auto auto / 60px auto;
+  margin-top: 30px;
+  align-items: center;
+}
+main section > span.iconfont{
+  grid-area: 1/1/2/2;
+  background-color: #77a8a3;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section > h2{
+  grid-area: 1/2/2/3;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+main section > h2::after{
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: #77a8a3;
+  margin: 0 20px;
+}
+main section > .detail{
+  grid-area: 2/2/3/3;
+}
+.basic-info > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.basic-info .iconfont{
+  font-size: 18px;
+  margin-right: 10px;
+}
+.basic-info .detail li{
+  display: flex;
+  align-items: center;
+}
+.skills ul{
+  margin: 0;
+  padding: 0;
+}
+.skills .detail li{
+  margin-top: 10px;
+}
+.column-2 section{
+  display: grid;
+  grid: auto auto auto / 50px auto 1fr auto;
+  grid-gap: 10px;
+}
+.education .iconfont .icon-education{
+  grid-area: 1/1/2/2;
+}
+.education h2{
+  grid-area: 1/2/2/5;
+}
+.education h3{
+  grid-area: 2/3/3/4;
+  margin:0;
+  font-size: 14px
+  padding: 0;
+}
+.education .timeline{
+  grid-area: 2/2/3/3;
+}
+.education .major{
+  grid-area: 2/4/3/5;
+}
+.education p{
+  grid-area: 3/3/4/4;
+  margin: 0;
+  padding: 0;
+}
+
+.column-2 h2{
+  grid-area: 1/2/2/5;
+}
+
+.column-2 .timeline{
+  grid-area: 2/2/3/3;
+}
+.column-2 .work h3{
+  grid-area: 2/3/3/4;
+  margin: 0;
+  padding: 0;
+}
+.column-2 .detail{
+  grid-area: 3/3/3/4;
+  margin: 0;
+  padding: 0;
+}
